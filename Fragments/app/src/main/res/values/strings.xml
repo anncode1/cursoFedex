@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fragments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="escribe_tarea">Escribe tu tarea</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="lista_tareas">Lista de Tareas</string>
+</resources>
