@@ -20,12 +20,17 @@
         android:text="@string/boton_guardar"
         />
 
-    <TextView
+    <!--<TextView
         android:id="@+id/tvTaskList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/lista_tareas"
-        />
+        />-->
+
+    <ListView
+        android:id="@+id/lstTasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 
 </LinearLayout>
