@@ -9,8 +9,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.anncode.holamundo.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <FrameLayout
+        android:id="@+id/fragmenContainer"
+        android:layout_width="@dimen/fragment_dimension"
+        android:layout_height="@dimen/fragment_dimension"/>
+
 </RelativeLayout>
