@@ -6,4 +6,6 @@
     <string name="escribe_tarea">Escribe tu tarea</string>
     <string name="boton_guardar">Guardar</string>
     <string name="lista_tareas">Lista de Tareas</string>
+    <string name="title_activity_view_pager">ViewPagerActivity</string>
+    <string name="taskName">Task Name</string>
 </resources>
