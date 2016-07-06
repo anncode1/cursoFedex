@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -47,12 +48,31 @@ public class CustomListFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String taskName = edtTaskToDoCustom.getText().toString();
-                tasks.add(new Task(taskName, ""));
-                itemListAdapter.notifyDataSetChanged();
+                addItemToCustomList(tasks, taskName, itemListAdapter);
+                edtTaskToDoCustom.setText("");
+            }
+        });
+
+
+        lstTasksCustom.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                removeItemCustomList(tasks, position, itemListAdapter);
+                return true;
             }
         });
 
         return view;
+    }
+
+    public void addItemToCustomList(ArrayList<Task> tasks, String taskName, ItemListAdapter itemListAdapter){
+        tasks.add(new Task(taskName, ""));
+        itemListAdapter.notifyDataSetChanged();
+    }
+
+    public void removeItemCustomList(ArrayList<Task> tasks, int position, ItemListAdapter itemListAdapter){
+        tasks.remove(position);
+        itemListAdapter.notifyDataSetChanged();
     }
 
 }
