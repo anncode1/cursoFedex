@@ -8,4 +8,6 @@
     <string name="lista_tareas">Lista de Tareas</string>
     <string name="title_activity_view_pager">ViewPagerActivity</string>
     <string name="taskName">Task Name</string>
+    <string name="task_title">Titulo</string>
+    <string name="task_description">Descripcion</string>
 </resources>

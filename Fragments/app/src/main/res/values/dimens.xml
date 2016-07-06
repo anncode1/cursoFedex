@@ -5,5 +5,9 @@
     <dimen name="fragment_dimension">300dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="task_text_size">20sp</dimen>
+    <dimen name="cardview_height">150dp</dimen>
+    <dimen name="task_description_size">18sp</dimen>
+    <dimen name="task_title_size">25sp</dimen>
+    <dimen name="margin_top_task_description">18sp</dimen>
 
 </resources>
