@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.anncode.contactosappintents.ContactDetailActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tvNameContactDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nameContact"
+        android:textSize="32sp"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:id="@+id/imgPictureContactDetail"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/contacto1"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvPhoneContactDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phoneContact"
+        android:layout_marginTop="45dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/tvWebSiteContactDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/websiteContact"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        />
+
+</LinearLayout>

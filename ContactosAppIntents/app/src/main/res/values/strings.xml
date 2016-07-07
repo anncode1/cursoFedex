@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ContactosAppIntents</string>
+    <string name="nameContact">Sakura</string>
+    <string name="phoneContact">5555-4444</string>
+    <string name="websiteContact">www.google.com</string>
+    <string name="key_extra_contact">ContactObject</string>
+</resources>
