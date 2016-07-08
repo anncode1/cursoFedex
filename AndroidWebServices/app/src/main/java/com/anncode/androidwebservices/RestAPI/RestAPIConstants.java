@@ -10,6 +10,8 @@ public final class RestAPIConstants {
     public static final String HEADER_JSON = "Accept: application/json";
 
     public static final String KEY_ALL_COUNTRIES = "all/";
+    public static final String KEY_COUNTRY_BY_CODE = "alpha/{country_code}";
+
 
 
 

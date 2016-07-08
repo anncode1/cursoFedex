@@ -5,18 +5,20 @@ package com.anncode.androidwebservices.RestAPI.modelo;
  */
 public class Country {
 
-    private String  code;
-    private String  name;
-    private int     area;
-    private String  region;
-    private int[]   latlng;
+    private String code;
+    private String name;
+    private int area;
+    private String region;
+    private int lat;
+    private int lng;
 
-    public Country(String code, String name, int area, String region, int[] latlng) {
-        this.code = code;
-        this.name = name;
-        this.area = area;
+    public Country(int lng, int lat, String region, int area, String name, String code) {
+        this.lng = lng;
+        this.lat = lat;
         this.region = region;
-        this.latlng = latlng;
+        this.area = area;
+        this.name = name;
+        this.code = code;
     }
 
 
@@ -52,11 +54,19 @@ public class Country {
         this.region = region;
     }
 
-    public int[] getLatlng() {
-        return latlng;
+    public int getLat() {
+        return lat;
     }
 
-    public void setLatlng(int[] latlng) {
-        this.latlng = latlng;
+    public void setLat(int lat) {
+        this.lat = lat;
+    }
+
+    public int getLng() {
+        return lng;
+    }
+
+    public void setLng(int lng) {
+        this.lng = lng;
     }
 }

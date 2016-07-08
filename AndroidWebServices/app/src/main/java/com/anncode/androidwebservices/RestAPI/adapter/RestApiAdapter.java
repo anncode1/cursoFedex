@@ -2,7 +2,10 @@ package com.anncode.androidwebservices.RestAPI.adapter;
 
 import com.anncode.androidwebservices.RestAPI.Endpoints;
 import com.anncode.androidwebservices.RestAPI.RestAPIConstants;
+import com.anncode.androidwebservices.RestAPI.deserializer.CountryDeserializer;
+import com.anncode.androidwebservices.RestAPI.modelo.CountryResponse;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -23,6 +26,12 @@ public class RestApiAdapter {
 
     }
 
+    public Gson buildGsonDeserializerAllCountries(){
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        gsonBuilder.registerTypeAdapter(CountryResponse.class,
+                new CountryDeserializer());
+        return gsonBuilder.create();
+    }
 
 
 }
